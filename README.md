@@ -20,3 +20,6 @@ Try to get into the Authenticated page.  If you are able to do this, post the fo
 * Password
 * Digit sequence
 * Alphanumeric mapping
+
+## Also . . .
+This challenge is hosted on Appspot, so no fair if you work at Google and look up the secrets in the file on the site hosting.
