@@ -33,6 +33,11 @@ login_page_str = '''
 </form>
 </table>
 
+<p>
+Site code and directions can be found at GitHub.com at:<br />
+<a href="https://github.com/lmandres/BlumMentalHashChallenge">https://github.com/lmandres/BlumMentalHashChallenge</a>
+</p>
+
 </body>
 </html>
 '''
@@ -108,7 +113,7 @@ def blum_hash_word(input_word, alphanumeric, alphanumbmap, digits):
         if i == 0:
             hashtext += get_map_digit((get_map_index(plaintext[0]) + get_map_index(plaintext[-1])) % 10)
         else:
-            hashtext += get_map_digit((int(hashtext[i-1], 16) + get_map_index(plaintext[i])) % 10)
+            hashtext += get_map_digit((get_map_index(hashtext[i-1]) + get_map_index(plaintext[i])) % 10)
     
     return hashtext
 
